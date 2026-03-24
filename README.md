@@ -12,8 +12,8 @@ ORM: SQLAlchemy (Gestión de base de datos mediante objetos).
 
 Documentación: Swagger UI (Generada automáticamente).
 
-📋 Requisitos del Proyecto (Cumplimiento)
-Este proyecto cumple con los 5 puntos clave solicitados:
+📋 Requisitos del Proyecto
+Este proyecto cumple con los 3 puntos clave solicitados + 2 extras
 
 Entorno Virtual: Configurado y gestionado con venv.
 
