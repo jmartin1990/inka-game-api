@@ -1,4 +1,4 @@
-# 🎮 Inka Game Shop - API Backend
+# Inka Game Shop - API Backend
 
 ![Python](https://img.shields.io/badge/Python-3.12+-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.135.2-green?logo=fastapi)
@@ -8,7 +8,7 @@ Este es el motor central (**Backend**) del ecosistema **Inka Game Shop**. Una AP
 
 ---
 
-## 👤 Información del Proyecto
+## Información del Proyecto
 
 - **Autor:** Juan Campos
 - **Stack:** `FastAPI`, `PostgreSQL 17`, `SQLAlchemy`, `Python 3.12+`
@@ -16,7 +16,7 @@ Este es el motor central (**Backend**) del ecosistema **Inka Game Shop**. Una AP
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Lenguaje:** `Python 3.12+`
 - **Framework:** `FastAPI` (Moderno, rápido y basado en tipado).
@@ -26,19 +26,19 @@ Este es el motor central (**Backend**) del ecosistema **Inka Game Shop**. Una AP
 
 ---
 
-## 📋 Requisitos del Proyecto (Checklist)
+## Requisitos del Proyecto (Checklist)
 
 Este proyecto cumple estrictamente con los 5 puntos clave solicitados:
 
-1.  ✅ **Entorno Virtual:** Configurado y gestionado con `venv`.
-2.  ✅ **Arquitectura API:** Endpoints para juegos, suscripciones, soporte e inventario. Incluye script `setup_db_init.sql`.
-3.  ✅ **Pruebas:** Totalmente funcional y testeado mediante **Swagger UI**.
-4.  ✅ **Frontend:** Integración completa con cliente en **Next.js**.
-5.  ✅ **Persistencia:** Implementación estricta en **PostgreSQL 17**.
+1.  **Entorno Virtual:** Configurado y gestionado con `venv`.
+2.  **Arquitectura API:** Endpoints para juegos, suscripciones, soporte e inventario. Incluye script `setup_db_init.sql`.
+3.  **Pruebas:** Totalmente funcional y testeado mediante **Swagger UI**.
+4.  **Frontend:** Integración completa con cliente en **Next.js**.
+5.  **Persistencia:** Implementación estricta en **PostgreSQL 17**.
 
 ---
 
-## 🚀 Guía de Instalación y Uso
+## Guía de Instalación y Uso
 
 ### 1. Preparar el Entorno
 
