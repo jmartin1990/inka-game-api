@@ -61,12 +61,12 @@ fastapi dev
 
 🌐 La API estará disponible en: http://127.0.0.1:8000
 
-### 📖 Documentación de la API
+## 📖 Documentación de la API
 Una vez encendido el servidor, puedes acceder a la documentación interactiva para probar todos los endpoints en tiempo real:
 
 👉 Swagger UI: http://127.0.0.1:8000/docs
 
-### 📂 Estructura de Archivos
+## 📂 Estructura de Archivos
 main.py: Punto de entrada de la aplicación y definición de rutas.
 
 models.py: Definición de las tablas de la base de datos (SQLAlchemy).
@@ -79,12 +79,13 @@ requirements.txt: Lista completa de dependencias y versiones.
 
 .gitignore: Filtro para evitar subir archivos temporales (__pycache__, venv).
 
-### 🔗 Ecosistema Completo (Full Stack)
+## 🔗 Ecosistema Completo (Full Stack)
 Este repositorio contiene exclusivamente la API (Backend). Para disfrutar de la experiencia completa de la tienda, con su interfaz visual, animaciones y gestión de inventario, es imprescindible ejecutar el frontend:
 
-## 👉 Repositorio Frontend: inka-game-shop
+### 👉 Frontend UI: 
+[inka-game-shop](https://github.com/jmartin1990/inka-game-shop)
 
-## ⚙️ Cómo trabajan juntos:
+### ⚙️ Cómo trabajan juntos:
 Backend (API): Gestiona la lógica de negocio y la base de datos PostgreSQL 17 en el puerto 8000.
 
 Frontend (Next.js): Consume los datos de la API y los presenta de forma visual en el puerto 3000.
