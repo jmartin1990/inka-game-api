@@ -1,40 +1,41 @@
-# 🎮 Inka Game Shop - API Backend
+# 🎮 Inka Game Shop - Frontend UI
 
-![Python](https://img.shields.io/badge/Python-3.12+-blue?logo=python)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.135.2-green?logo=fastapi)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue?logo=postgresql)
+Proyecto de práctica del curso oficial de **Next.js** ([nextjs.org/learn](https://nextjs.org/learn)), adaptado a una tienda de videojuegos retro / moderna.
 
-Este es el motor central (**Backend**) del ecosistema **Inka Game Shop**. Una API robusta diseñada para gestionar el catálogo de videojuegos, suscripciones de ofertas, inventario de usuarios y mensajería de soporte.
+![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?logo=tailwind-css)
+![pnpm](https://img.shields.io/badge/pnpm-8+-orange?logo=pnpm)
 
 ---
 
 ## 👤 Información del Proyecto
 
 - **Autor:** Juan Campos
-- **Stack:** `FastAPI`, `PostgreSQL 17`, `SQLAlchemy`, `Python 3.12+`
+- **Stack:** `Next.js 14`, `App Router`, `TypeScript`, `Tailwind CSS`
 - **Deploy:** Local y GitHub (rama `main`)
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Lenguaje:** `Python 3.12+`
-- **Framework:** `FastAPI` (Moderno, rápido y basado en tipado).
-- **Base de Datos:** `PostgreSQL 17` (Relacional).
-- **ORM:** `SQLAlchemy` (Gestión de base de datos mediante objetos).
-- **Documentación:** `Swagger UI` (Generada automáticamente).
+- **Framework:** `Next.js 14` (App Router).
+- **Lenguaje:** `TypeScript` (Tipado estricto para mayor seguridad).
+- **Estilos:** `Tailwind CSS` (Diseño responsivo y moderno).
+- **Fuentes:** `Google Fonts` (Montserrat & Lusitana).
+- **Gestor de Paquetes:** `pnpm`.
 
 ---
 
-## 📋 Requisitos del Proyecto (Checklist)
+## 📋 Características de la Aplicación
 
-Este proyecto cumple estrictamente con los 3 puntos clave solicitados + 2 extras:
+El proyecto ha sido optimizado y conectado para ofrecer las siguientes funcionalidades:
 
-1.  ✅ **Entorno Virtual:** Configurado y gestionado con `venv`.
-2.  ✅ **Arquitectura API:** Endpoints para juegos, suscripciones, soporte e inventario. Incluye script `setup_db_init.sql`.
-3.  ✅ **Pruebas:** Totalmente funcional y testeado mediante **Swagger UI**.
-4.  ✅ **Frontend:** Integración completa con cliente en **Next.js**.
-5.  ✅ **Persistencia:** Implementación estricta en **PostgreSQL 17**.
+1.  ✅ **Catálogo Dinámico:** Renderizado de videojuegos obtenidos desde la API de FastAPI.
+2.  ✅ **Sistema de Ofertas:** Sección especial de promociones con precios actualizados.
+3.  ✅ **Formularios Activos:** Suscripción al boletín y contacto conectados a PostgreSQL 17.
+4.  ✅ **Diseño Responsivo:** Adaptado para dispositivos móviles y escritorio.
+5.  ✅ **Navegación Fluida:** Uso de `next/link` y layouts optimizados.
 
 ---
 
@@ -42,69 +43,39 @@ Este proyecto cumple estrictamente con los 3 puntos clave solicitados + 2 extras
 
 ### 1. Preparar el Entorno
 
-Ejecuta estos comandos desde la terminal en la carpeta raíz del proyecto:
+Desde la terminal en la carpeta raíz del proyecto (asegúrate de tener `pnpm` instalado):
 
 ```bash
-# Crear el entorno virtual
-python -m venv venv
+# Instalar las dependencias
+pnpm install
 
-# Activar el entorno (Windows)
-source venv/Scripts/activate
+# Iniciar el servidor de desarrollo
+pnpm dev
 
-# Instalar todas las dependencias necesarias
-pip install -r requirements.txt
 ```
 
-### 2. Inicializar la Base de Datos
+### La tienda estará disponible en: http://localhost:3000
 
-- Asegúrate de tener instalado PostgreSQL 17.
+## 📂 Estructura de Archivos Principal
 
-- Crea una base de datos llamada inka_db.
+- app/layout.tsx: Menú principal (Navbar) y Footer global.
 
-- Ejecuta el script contenido en el archivo setup_db_init.sql en tu herramienta de gestión (pgAdmin 4 o Query Tool) para crear las tablas y cargar los datos iniciales de la tienda.
+- app/ui/: Estilos globales (global.css), fuentes y módulos CSS.
 
-### 3. Ejecutar el Servidor
+- public/: Almacén de assets (imágenes de tienda, héroes y novedades).
 
-Inicia la API en modo desarrollo:
-
-```bash
-fastapi dev
-```
-
-🌐 La API estará disponible en: http://127.0.0.1:8000
-
-## 📖 Documentación de la API
-
-Una vez encendido el servidor, puedes acceder a la documentación interactiva para probar todos los endpoints en tiempo real:
-
-👉 Swagger UI: http://127.0.0.1:8000/docs
-
-## 📂 Estructura de Archivos
-
-main.py: Punto de entrada de la aplicación y definición de rutas.
-
-models.py: Definición de las tablas de la base de datos (SQLAlchemy).
-
-database.py: Configuración de la conexión a PostgreSQL.
-
-setup_db_init.sql: Script SQL para la creación e inicialización de la DB.
-
-requirements.txt: Lista completa de dependencias y versiones.
-
-.gitignore: Filtro para evitar subir archivos temporales (**pycache**, venv).
+- app/tienda/: Lógica de renderizado de cartas de videojuegos.
 
 ## 🔗 Ecosistema Completo (Full Stack)
 
-Este repositorio contiene exclusivamente la API (Backend). Para disfrutar de la experiencia completa de la tienda, con su interfaz visual, animaciones y gestión de inventario, es imprescindible ejecutar el frontend:
+Este repositorio contiene la Interfaz (Frontend). Para que las funcionalidades de inventario, suscripción y contacto funcionen, es imprescindible ejecutar el backend:
 
-### 👉 Frontend UI:
+### 👉 Repositorio Backend: [inka-game-api](https://github.com/jmartin1990/inka-game-api/)
 
-[inka-game-shop](https://github.com/jmartin1990/inka-game-shop)
+## ⚙️ Cómo trabajan juntos:
 
-### ⚙️ Cómo trabajan juntos:
+1. Backend (API): Gestiona la lógica de negocio y PostgreSQL 17 en el puerto 8000.
 
-1. Backend (API): Gestiona la lógica de negocio y la base de datos PostgreSQL 17 en el puerto 8000.
+2. Frontend (Next.js): Consume los datos y los presenta visualmente en el puerto 3000.
 
-2. Frontend (Next.js): Consume los datos de la API y los presenta de forma visual en el puerto 3000.
-
-3. CORS: La API tiene configurado el middleware de CORS para permitir peticiones seguras desde el origen de Next.js.
+3. CORS: La API permite peticiones seguras desde este origen para garantizar la integridad de los datos.
